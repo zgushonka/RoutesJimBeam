@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A80BB0C5B7FCE028B8FE5E9 /* Pods_JimBeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F894A50EC3F2CC3AE09FA030 /* Pods_JimBeam.framework */; };
+		70531F4906FDF1FF14A0A3C1 /* Pods_JimBeamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D35DDA919E45890C411FE3 /* Pods_JimBeamTests.framework */; };
+		E31184141F7A7192008DF478 /* RouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31184131F7A7192008DF478 /* RouteTests.swift */; };
+		E31184171F7A8049008DF478 /* RouteMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31184161F7A8049008DF478 /* RouteMapViewModelTests.swift */; };
+		E31863711F794F3400382FF4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31863701F794F3400382FF4 /* LocationService.swift */; };
+		E31863731F79902300382FF4 /* RouteMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31863721F79902300382FF4 /* RouteMapViewController.swift */; };
+		E31863751F7993A100382FF4 /* ControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31863741F7993A100382FF4 /* ControlViewModel.swift */; };
+		E31863771F799B7E00382FF4 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31863761F799B7E00382FF4 /* LocationProvider.swift */; };
+		E31863791F799FD100382FF4 /* LocationRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31863781F799FD100382FF4 /* LocationRecorder.swift */; };
+		E31FE2FB1F79BA0600FFAD1E /* RoutesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31FE2FA1F79BA0600FFAD1E /* RoutesData.swift */; };
+		E31FE3001F79C2FB00FFAD1E /* RouteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31FE2FF1F79C2FB00FFAD1E /* RouteListViewModel.swift */; };
+		E31FE3051F79DB1B00FFAD1E /* RouteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31FE3041F79DB1B00FFAD1E /* RouteListTableViewController.swift */; };
+		E31FE3071F79DCB500FFAD1E /* RouteMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31FE3061F79DCB500FFAD1E /* RouteMapViewModel.swift */; };
+		E389F8E31F7C2D4600269210 /* RealmStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389F8E21F7C2D4600269210 /* RealmStore.swift */; };
+		E389F8E51F7C2E9E00269210 /* RouteRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E389F8E41F7C2E9E00269210 /* RouteRealm.swift */; };
+		E39544461F7A88B90079E3C9 /* HobbitRouteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39544451F7A88B90079E3C9 /* HobbitRouteTests.swift */; };
+		E3C4A98E1F79456100C9B712 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4A98D1F79456100C9B712 /* AppDelegate.swift */; };
+		E3C4A9901F79456100C9B712 /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4A98F1F79456100C9B712 /* ControlViewController.swift */; };
+		E3C4A9931F79456100C9B712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C4A9911F79456100C9B712 /* Main.storyboard */; };
+		E3C4A9951F79456100C9B712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C4A9941F79456100C9B712 /* Assets.xcassets */; };
+		E3C4A9981F79456100C9B712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3C4A9961F79456100C9B712 /* LaunchScreen.storyboard */; };
+		E3C4A9A31F79456100C9B712 /* JimBeamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C4A9A21F79456100C9B712 /* JimBeamTests.swift */; };
+		E3E3F8BC1F79A78E004E6916 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E3F8BB1F79A78E004E6916 /* Route.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3C4A99F1F79456100C9B712 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3C4A9821F79456100C9B712 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3C4A9891F79456100C9B712;
+			remoteInfo = JimBeam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5A36CD10042BB7B3A3E6AE81 /* Pods-JimBeamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimBeamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JimBeamTests/Pods-JimBeamTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F0A18A057AA54741B0E13FB /* Pods-JimBeam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimBeam.release.xcconfig"; path = "Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam.release.xcconfig"; sourceTree = "<group>"; };
+		9F81F8ABF8104396663DED99 /* Pods-JimBeamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimBeamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JimBeamTests/Pods-JimBeamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A06FB75A9FF9F44224595FAC /* Pods-JimBeam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JimBeam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam.debug.xcconfig"; sourceTree = "<group>"; };
+		D4D35DDA919E45890C411FE3 /* Pods_JimBeamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JimBeamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E31184131F7A7192008DF478 /* RouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTests.swift; sourceTree = "<group>"; };
+		E31184161F7A8049008DF478 /* RouteMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewModelTests.swift; sourceTree = "<group>"; };
+		E31863701F794F3400382FF4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		E31863721F79902300382FF4 /* RouteMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewController.swift; sourceTree = "<group>"; };
+		E31863741F7993A100382FF4 /* ControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewModel.swift; sourceTree = "<group>"; };
+		E31863761F799B7E00382FF4 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		E31863781F799FD100382FF4 /* LocationRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRecorder.swift; sourceTree = "<group>"; };
+		E31FE2FA1F79BA0600FFAD1E /* RoutesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesData.swift; sourceTree = "<group>"; };
+		E31FE2FF1F79C2FB00FFAD1E /* RouteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListViewModel.swift; sourceTree = "<group>"; };
+		E31FE3011F79CC2700FFAD1E /* CodingStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingStore.swift; sourceTree = "<group>"; };
+		E31FE3041F79DB1B00FFAD1E /* RouteListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTableViewController.swift; sourceTree = "<group>"; };
+		E31FE3061F79DCB500FFAD1E /* RouteMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewModel.swift; sourceTree = "<group>"; };
+		E389F8E21F7C2D4600269210 /* RealmStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStore.swift; sourceTree = "<group>"; };
+		E389F8E41F7C2E9E00269210 /* RouteRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRealm.swift; sourceTree = "<group>"; };
+		E39544451F7A88B90079E3C9 /* HobbitRouteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbitRouteTests.swift; sourceTree = "<group>"; };
+		E3C4A98A1F79456100C9B712 /* JimBeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JimBeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C4A98D1F79456100C9B712 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3C4A98F1F79456100C9B712 /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		E3C4A9921F79456100C9B712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3C4A9941F79456100C9B712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3C4A9971F79456100C9B712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3C4A9991F79456100C9B712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3C4A99E1F79456100C9B712 /* JimBeamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JimBeamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C4A9A21F79456100C9B712 /* JimBeamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JimBeamTests.swift; sourceTree = "<group>"; };
+		E3C4A9A41F79456100C9B712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3E3F8BB1F79A78E004E6916 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		F894A50EC3F2CC3AE09FA030 /* Pods_JimBeam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JimBeam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3C4A9871F79456100C9B712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A80BB0C5B7FCE028B8FE5E9 /* Pods_JimBeam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C4A99B1F79456100C9B712 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70531F4906FDF1FF14A0A3C1 /* Pods_JimBeamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D861530B26F210121551DA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A06FB75A9FF9F44224595FAC /* Pods-JimBeam.debug.xcconfig */,
+				6F0A18A057AA54741B0E13FB /* Pods-JimBeam.release.xcconfig */,
+				9F81F8ABF8104396663DED99 /* Pods-JimBeamTests.debug.xcconfig */,
+				5A36CD10042BB7B3A3E6AE81 /* Pods-JimBeamTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A447B0B1B7197FD27BCEC7FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F894A50EC3F2CC3AE09FA030 /* Pods_JimBeam.framework */,
+				D4D35DDA919E45890C411FE3 /* Pods_JimBeamTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E31FE2FC1F79BA8F00FFAD1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E31FE2FA1F79BA0600FFAD1E /* RoutesData.swift */,
+				E3E3F8BB1F79A78E004E6916 /* Route.swift */,
+				E31FE3011F79CC2700FFAD1E /* CodingStore.swift */,
+				E389F8E61F7C3E2600269210 /* RealmStore */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E31FE3031F79DA9600FFAD1E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4A98F1F79456100C9B712 /* ControlViewController.swift */,
+				E31863741F7993A100382FF4 /* ControlViewModel.swift */,
+				E31FE3041F79DB1B00FFAD1E /* RouteListTableViewController.swift */,
+				E31FE2FF1F79C2FB00FFAD1E /* RouteListViewModel.swift */,
+				E31863721F79902300382FF4 /* RouteMapViewController.swift */,
+				E31FE3061F79DCB500FFAD1E /* RouteMapViewModel.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E389F8E61F7C3E2600269210 /* RealmStore */ = {
+			isa = PBXGroup;
+			children = (
+				E389F8E21F7C2D4600269210 /* RealmStore.swift */,
+				E389F8E41F7C2E9E00269210 /* RouteRealm.swift */,
+			);
+			path = RealmStore;
+			sourceTree = "<group>";
+		};
+		E3C4A9811F79456100C9B712 = {
+			isa = PBXGroup;
+			children = (
+				E3C4A98C1F79456100C9B712 /* JimBeam */,
+				E3C4A9A11F79456100C9B712 /* JimBeamTests */,
+				E3C4A98B1F79456100C9B712 /* Products */,
+				8D861530B26F210121551DA8 /* Pods */,
+				A447B0B1B7197FD27BCEC7FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3C4A98B1F79456100C9B712 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4A98A1F79456100C9B712 /* JimBeam.app */,
+				E3C4A99E1F79456100C9B712 /* JimBeamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3C4A98C1F79456100C9B712 /* JimBeam */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4A98D1F79456100C9B712 /* AppDelegate.swift */,
+				E31FE3031F79DA9600FFAD1E /* ViewControllers */,
+				E31863781F799FD100382FF4 /* LocationRecorder.swift */,
+				E31863761F799B7E00382FF4 /* LocationProvider.swift */,
+				E31863701F794F3400382FF4 /* LocationService.swift */,
+				E31FE2FC1F79BA8F00FFAD1E /* Model */,
+				E3C4A9911F79456100C9B712 /* Main.storyboard */,
+				E3C4A9941F79456100C9B712 /* Assets.xcassets */,
+				E3C4A9961F79456100C9B712 /* LaunchScreen.storyboard */,
+				E3C4A9991F79456100C9B712 /* Info.plist */,
+			);
+			path = JimBeam;
+			sourceTree = "<group>";
+		};
+		E3C4A9A11F79456100C9B712 /* JimBeamTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3C4A9A21F79456100C9B712 /* JimBeamTests.swift */,
+				E31184131F7A7192008DF478 /* RouteTests.swift */,
+				E39544451F7A88B90079E3C9 /* HobbitRouteTests.swift */,
+				E31184161F7A8049008DF478 /* RouteMapViewModelTests.swift */,
+				E3C4A9A41F79456100C9B712 /* Info.plist */,
+			);
+			path = JimBeamTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3C4A9891F79456100C9B712 /* JimBeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C4A9A71F79456100C9B712 /* Build configuration list for PBXNativeTarget "JimBeam" */;
+			buildPhases = (
+				68B27B7814B6B701D17B9A1D /* [CP] Check Pods Manifest.lock */,
+				E3C4A9861F79456100C9B712 /* Sources */,
+				E3C4A9871F79456100C9B712 /* Frameworks */,
+				E3C4A9881F79456100C9B712 /* Resources */,
+				6E7A584EB65A341EF3C934C4 /* [CP] Embed Pods Frameworks */,
+				E9F3626F4DA53ED5FAE1D9EA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JimBeam;
+			productName = JimBeam;
+			productReference = E3C4A98A1F79456100C9B712 /* JimBeam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3C4A99D1F79456100C9B712 /* JimBeamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3C4A9AA1F79456100C9B712 /* Build configuration list for PBXNativeTarget "JimBeamTests" */;
+			buildPhases = (
+				1540E6E86D441D8D82C74F4A /* [CP] Check Pods Manifest.lock */,
+				E3C4A99A1F79456100C9B712 /* Sources */,
+				E3C4A99B1F79456100C9B712 /* Frameworks */,
+				E3C4A99C1F79456100C9B712 /* Resources */,
+				0394E9AF2F4DE86DAB73BBCA /* [CP] Embed Pods Frameworks */,
+				4E185BEC2FCE79C9ABF01229 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3C4A9A01F79456100C9B712 /* PBXTargetDependency */,
+			);
+			name = JimBeamTests;
+			productName = JimBeamTests;
+			productReference = E3C4A99E1F79456100C9B712 /* JimBeamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3C4A9821F79456100C9B712 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Buravlyov;
+				TargetAttributes = {
+					E3C4A9891F79456100C9B712 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					E3C4A99D1F79456100C9B712 = {
+						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E3C4A9891F79456100C9B712;
+					};
+				};
+			};
+			buildConfigurationList = E3C4A9851F79456100C9B712 /* Build configuration list for PBXProject "JimBeam" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3C4A9811F79456100C9B712;
+			productRefGroup = E3C4A98B1F79456100C9B712 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3C4A9891F79456100C9B712 /* JimBeam */,
+				E3C4A99D1F79456100C9B712 /* JimBeamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3C4A9881F79456100C9B712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C4A9981F79456100C9B712 /* LaunchScreen.storyboard in Resources */,
+				E3C4A9951F79456100C9B712 /* Assets.xcassets in Resources */,
+				E3C4A9931F79456100C9B712 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C4A99C1F79456100C9B712 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0394E9AF2F4DE86DAB73BBCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JimBeamTests/Pods-JimBeamTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JimBeamTests/Pods-JimBeamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1540E6E86D441D8D82C74F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JimBeamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E185BEC2FCE79C9ABF01229 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JimBeamTests/Pods-JimBeamTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68B27B7814B6B701D17B9A1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JimBeam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7A584EB65A341EF3C934C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F3626F4DA53ED5FAE1D9EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JimBeam/Pods-JimBeam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3C4A9861F79456100C9B712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31FE3051F79DB1B00FFAD1E /* RouteListTableViewController.swift in Sources */,
+				E3C4A9901F79456100C9B712 /* ControlViewController.swift in Sources */,
+				E31863711F794F3400382FF4 /* LocationService.swift in Sources */,
+				E31863731F79902300382FF4 /* RouteMapViewController.swift in Sources */,
+				E3C4A98E1F79456100C9B712 /* AppDelegate.swift in Sources */,
+				E31863791F799FD100382FF4 /* LocationRecorder.swift in Sources */,
+				E389F8E51F7C2E9E00269210 /* RouteRealm.swift in Sources */,
+				E389F8E31F7C2D4600269210 /* RealmStore.swift in Sources */,
+				E3E3F8BC1F79A78E004E6916 /* Route.swift in Sources */,
+				E31FE2FB1F79BA0600FFAD1E /* RoutesData.swift in Sources */,
+				E31FE3001F79C2FB00FFAD1E /* RouteListViewModel.swift in Sources */,
+				E31863771F799B7E00382FF4 /* LocationProvider.swift in Sources */,
+				E31863751F7993A100382FF4 /* ControlViewModel.swift in Sources */,
+				E31FE3071F79DCB500FFAD1E /* RouteMapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3C4A99A1F79456100C9B712 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C4A9A31F79456100C9B712 /* JimBeamTests.swift in Sources */,
+				E31184171F7A8049008DF478 /* RouteMapViewModelTests.swift in Sources */,
+				E31184141F7A7192008DF478 /* RouteTests.swift in Sources */,
+				E39544461F7A88B90079E3C9 /* HobbitRouteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3C4A9A01F79456100C9B712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3C4A9891F79456100C9B712 /* JimBeam */;
+			targetProxy = E3C4A99F1F79456100C9B712 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3C4A9911F79456100C9B712 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C4A9921F79456100C9B712 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3C4A9961F79456100C9B712 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3C4A9971F79456100C9B712 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3C4A9A51F79456100C9B712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3C4A9A61F79456100C9B712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3C4A9A81F79456100C9B712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06FB75A9FF9F44224595FAC /* Pods-JimBeam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6B68ZWQ8T;
+				INFOPLIST_FILE = JimBeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.JimBeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3C4A9A91F79456100C9B712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F0A18A057AA54741B0E13FB /* Pods-JimBeam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P6B68ZWQ8T;
+				INFOPLIST_FILE = JimBeam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.JimBeam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E3C4A9AB1F79456100C9B712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F81F8ABF8104396663DED99 /* Pods-JimBeamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX5CVNJ6;
+				INFOPLIST_FILE = JimBeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.JimBeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JimBeam.app/JimBeam";
+			};
+			name = Debug;
+		};
+		E3C4A9AC1F79456100C9B712 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A36CD10042BB7B3A3E6AE81 /* Pods-JimBeamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX5CVNJ6;
+				INFOPLIST_FILE = JimBeamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = werwer.JimBeamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JimBeam.app/JimBeam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3C4A9851F79456100C9B712 /* Build configuration list for PBXProject "JimBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C4A9A51F79456100C9B712 /* Debug */,
+				E3C4A9A61F79456100C9B712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C4A9A71F79456100C9B712 /* Build configuration list for PBXNativeTarget "JimBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C4A9A81F79456100C9B712 /* Debug */,
+				E3C4A9A91F79456100C9B712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3C4A9AA1F79456100C9B712 /* Build configuration list for PBXNativeTarget "JimBeamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3C4A9AB1F79456100C9B712 /* Debug */,
+				E3C4A9AC1F79456100C9B712 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3C4A9821F79456100C9B712 /* Project object */;
+}

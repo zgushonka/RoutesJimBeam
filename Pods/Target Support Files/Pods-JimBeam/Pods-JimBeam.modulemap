@@ -1,0 +1,6 @@
+framework module Pods_JimBeam {
+  umbrella header "Pods-JimBeam-umbrella.h"
+
+  export *
+  module * { export * }
+}
